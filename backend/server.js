@@ -29,7 +29,7 @@ app.post("/summary", async (req, res) => {
    const summary = result.response.text();
 
    const shortUrl =
-      "smart.ly/" +
+      "smart.ly/" +    
       Math.random().toString(36).substring(2, 8);
 
    res.json({
