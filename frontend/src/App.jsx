@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
    const [url, setUrl] = useState("");
@@ -63,7 +64,8 @@ setLoading(false);
 };
 
   return (
-    <div>
+    <div className="container">
+      <div className="card">
       <h1>Smart Link Manager</h1>
 
       <p>AI-powered URL shortening and summarization</p>
@@ -85,13 +87,21 @@ setLoading(false);
          <div>
             <h3>Tags</h3>
             {tags.map((tag,index) => (
-               <p key={index}>{tag}</p>
-            ))}
+               <span className="tag" key={index}>
+                   {tag}
+               </span>
+             ))}
         </div>
       )}
       {loading && <p>Generating Summary...</p>}
-      {summary && <p>{summary}</p>}
+      {summary && (
+        <div className="summary-box">
+             <h3>Summary</h3>
+            <p>{summary}</p>
+        </div>
+       )}
       
+    </div>
     </div>
   );
 }
