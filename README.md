@@ -4,6 +4,17 @@
 
 AI Smart Link Manager is a full-stack web application that generates intelligent summaries and tags from URLs using Google's Gemini API. The application stores processed links in a MySQL database and avoids duplicate processing through database-based caching.
 
+## Screenshots
+
+### Home Page
+
+<img width="1070" height="605" alt="image" src="https://github.com/user-attachments/assets/a69cd09a-54a9-43fd-a250-ec1220b3616c" />
+
+
+### Generated Summary and Tags
+
+<img width="1119" height="911" alt="image" src="https://github.com/user-attachments/assets/7203c9f9-d7c8-417e-b079-69ec0fa9b392" />
+
 ## Features
 
 * AI-generated URL summaries using Gemini
